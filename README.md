@@ -21,6 +21,14 @@ Before running the containers, make sure to update the following placeholders in
 
 ## Running the Stack
 
+
+Download the docker-compose.yml file, and edit it with nano or vim to change the defaults
+
+```sh
+curl -o docker-compose.yml https://raw.githubusercontent.com/Sabering1/jellyfin-media-server/main/docker-compose.yml
+```
+
+
 Once you have modified the necessary values, deploy the stack with:
 
 ```sh
