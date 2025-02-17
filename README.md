@@ -46,11 +46,11 @@ docker-compose down
 ```
 WebUI\Password_PBKDF2="@ByteArray(ARQ77eY1NUZaQsuDHbIMCA==:0WMRkYTUWVT9wVvdDtHAjU9b3b7uB8NR1Gur2hmQCvCDpm39Q+PsJRJPaCU51dEiz+dTzh8qbPsL8WkFljQYFQ==)"
 ```
-- Ensure that you have the required directories created before running the containers.
+- Ensure that you have the required directories created before running the containers, if not docker compose will probably create them for you.
 - You may need to adjust firewall settings if running on a remote machine.
 - If using a reverse proxy, update the configurations accordingly.
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the AGPL License. See the `LICENSE` file for details.
 
