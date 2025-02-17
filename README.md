@@ -42,7 +42,10 @@ docker-compose down
 ```
 
 ## Notes
-
+- if you cant access qbittorrent with default password and username add this line under [Preferences], in the config file, for setting the default password manually to: adminadmin
+```
+WebUI\Password_PBKDF2="@ByteArray(ARQ77eY1NUZaQsuDHbIMCA==:0WMRkYTUWVT9wVvdDtHAjU9b3b7uB8NR1Gur2hmQCvCDpm39Q+PsJRJPaCU51dEiz+dTzh8qbPsL8WkFljQYFQ==)"
+```
 - Ensure that you have the required directories created before running the containers.
 - You may need to adjust firewall settings if running on a remote machine.
 - If using a reverse proxy, update the configurations accordingly.
