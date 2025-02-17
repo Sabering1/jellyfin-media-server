@@ -2,12 +2,12 @@ services:
   jellyfin:
     image: jellyfin/jellyfin:latest
     container_name: jellyfin
-    user: "1000:1000"
+    user: "1000:1000"  # default on most linux distros, run ' id -u && id -g ' in your linux server terminal to check your user id and group id, and change if needed
     network_mode: "host"
     group_add:
-    - "105" #change to your group
+    - "105" #change to your group if needed, default on most linux distros
     devices:
-      - /dev/dri/renderD128:/dev/dri/renderD128 # change this to your GPU for hardware decoding
+      - /dev/dri/renderD128:/dev/dri/renderD128 # change this to your GPU for hardware decoding https://jellyfin.org/docs/general/administration/hardware-acceleration/intel#configure-with-linux-virtualization
     volumes:
       - /docker/jellyfin/config:/config
       - /docker/jellyfin/cache:/cache
